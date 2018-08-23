@@ -1,0 +1,92 @@
+<html>
+
+<head>
+  <title>Register</title>
+  <link rel="stylesheet" type="text/css" href="register.css">
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+  <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+  <script  src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+   <script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.14.0/jquery.validate.min.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script type="text/javascript" src="register.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/js/bootstrap-datepicker.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/css/bootstrap-datepicker3.css"/>
+</head>
+
+<body>
+  <div class="bootstrap-iso">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4 col-md-offset-4">
+        <div class="panel panel-info" style="margin-top:50px;">
+          <div class="panel-heading">
+            <h4 class="text-center">Register</h4>
+            <h6>Not a user!!</h6></div>
+          <div class="panel-body">
+              <form id="myform2" action="inserting.php" method="post">
+              <div class="form-group">
+                <label for="fname">First Name</label>
+                <input type="text" class="form-control" id="first_name" name="first_name"   placeholder="Enter first name">
+                <span class="error_form" id="fname_message"></span>
+              </div>
+              <div class="form-group">
+                <label for="lname">Last Name</label>
+                <input type="text" class="form-control" id="last_name" name="last_name" placeholder="Enter last name">
+                <span class="error_form" id="lname_message"></span>
+              </div>
+               <div class="form-group">
+                <label for="email">Email</label>
+                <input type="text" class="form-control" id="email_id" name="email_id"  placeholder="Enter email">
+                <span class="error_form" id="email_message"></span>
+              </div>
+            
+               <div class="form-group"> 
+             <label for="datee">Date</label>
+              <input class="form-control" id="dateofbirth" name="dateofbirth" placeholder="YYYY/MM/DD" type="text"/>
+              <span class="error_form" id="dob_message"></span>
+              </div>
+               <div class="form-group">
+                <label for="dept">Department</label>
+                <input type="text" class="form-control" id="department" name="department" placeholder="Enter Department"><span class="error_form" id="dept_message"></span>
+              </div>
+               <label for="gender">Gender</label>
+               <div class="form-group" id="sex"> 
+                <div class="col-sm-3">
+                  <label class="radio-inline">
+                 <input name="gender" id="input-gender-male" value="Male"  type="radio" />Male
+                 </label>
+                </div>
+                   <div  class="col-sm-3">
+                  <label class="radio-inline">
+                  <input name="gender" id="input-gender-female" value="Female"  type="radio"/>Female
+                   </label>
+                 </div>
+                 <span class="error_form" id="sex_message"></span>
+                 </div>
+
+                 <br>
+               <div class="form-group">
+                <label for="city">City</label>
+                <input type="text" class="form-control" id="curr_city" name="curr_city" placeholder="Enter city name"><span class="error_form" id="city_message"></span>
+              </div>
+               <div class="form-group">
+                <label for="zip">ZipCode</label>
+                <input type="text" class="form-control" id="zipcode" name="zipcode" placeholder="Enter zipcode"><span class="error_form" id="zip_message"></span>
+              </div>
+               <div class="form-group">
+                <label for="phno">Phone No.</label>
+                <input type="text" class="form-control" id="phone_no" name="phone_no" placeholder="Enter phone number"><span class="error_form" id="phn_message"></span>
+              </div>
+
+              <button type="submit" class="btn btn-success btn-block" name="reg_sub" id="reg_sub">Submit</button>
+            </form>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+
+</html>
